@@ -2,6 +2,8 @@
 
 ## Demo
 
+For quick reference, the demo can be seen in the Heroku app:
+
 [Heroku app](https://movilr.herokuapp.com/)
 
 ## Local Setup
