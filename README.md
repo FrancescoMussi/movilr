@@ -15,7 +15,7 @@
 
 ### Framework
 
-I have used (Vue)[https://vuejs.org/] as js framework, and (Bulma)[https://bulma.io/] as css framework.
+I have used [Vue](https://vuejs.org/) as js framework, and [Bulma](https://bulma.io/) as css framework.
 
 ### Structure
 
@@ -36,7 +36,7 @@ The `Search` page contain three child components: the `SearchInput`, the `Card` 
 The `SearchInput` will take the user query and perform a GET request.
 This is done using Vue `Watchers`. Vue _'watch'_ changes to the `query` variable, and will make the request with a debounce of 500ms.
 
-Once the list of shows are retrieved from the (Axios)[https://github.com/axios/axios] response, they are displayed in a loop using `v-for`. Each value will be passed as a prop to the `Card` component and displayed.
+Once the list of shows are retrieved from the [Axios](https://github.com/axios/axios) response, they are displayed in a loop using `v-for`. Each value will be passed as a prop to the `Card` component and displayed.
 The cards are displayed with a little animation that fade in the opacity of the element.
 
 A dynamic `Notification` error component is displayed in case no results are found or if there is an error with the API.
