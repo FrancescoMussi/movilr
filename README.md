@@ -36,10 +36,10 @@ Each navigation's item it's represented by its own `MenuItem` child component, t
 
 ##### Search component
 
-The `Search` page is located at `src/pages/Search.vue` contain three child components: the `SearchInput`, the `Card` and the `Notification`.
+The `Search` page is located at `src/pages/Search.vue`. It contains three child components: the `SearchInput`, the `Card` and the `Notification`.
 
 - The `SearchInput` will take the user query and perform a GET request.
-This is done using Vue `Watchers`. Vue _'watch'_ changes to the `query` variable, and will make the request with a debounce of 500ms.
+This is done using Vue `Watchers`. Vue _'watches'_ changes to the `query` variable, and will make the request with a debounce of 500ms.
 
 - Once the list of shows are retrieved from the [Axios](https://github.com/axios/axios) response, they are displayed in a loop using `v-for`. Each value will be passed as a prop to the `Card` component and displayed.
 The cards are displayed with a little animation that fade in the opacity of the element.
@@ -48,6 +48,7 @@ The cards are displayed with a little animation that fade in the opacity of the 
 
 ##### Store
 
-The `store` (located at `src/store.js`) represent the application state. In this case it's very little. It just contain three state vars (the shows list and the notification data), one Action (asynchronous action to retrieve the shows list and commit the mutation with the data) and three Mutations to update the app's state.
+The `store` (located at `src/store.js`) represent the application state. <br/>
+In this case it's very little. It just contain three state `vars` (the shows list and the notification data), one `Action` (the asynchronous action to retrieve the shows list and commit the mutation with the data) and three `Mutations` to synchronously update the app's state.
 
 
