@@ -2,7 +2,7 @@
 
 ## Demo
 
-(Heroku app)[https://movilr.herokuapp.com/]
+[Heroku app](https://movilr.herokuapp.com/)
 
 ## Local Setup
 
