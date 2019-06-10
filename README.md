@@ -20,12 +20,13 @@ I have used [Vue](https://vuejs.org/) as js framework, and [Bulma](https://bulma
 ### Structure
 
 The project is component-based.
-`App.vu`e represented the main application file.
-The `div` with id `#app` is the part of the DOM controlled by Vue. 
-Inside this `div` we inject the two main page components: the `Menu` and the `Search` page.
+`App.vue` represented the main application file.
 
-Menu is the left navigation, where each navigation's item it's represented by its own `MenuItem` child component.
-To it are passed as props the name of the item, the svg icon path and a boolean telling Vue if the item is active.
+Inside it there is a `div` with id `#app`, which is the part of the DOM managed by Vue. <br/>
+Inside this `div` we inject the two main components: the `Menu` and the `Search` page.
+
+Menu is the left sidebar navigation. <br/>
+Each navigation's item it's represented by its own `MenuItem` child component, to whom are passed as props the title of the item, the svg icon path and a boolean telling Vue if the item is active.
 
 **Notes**: 
 - For the demo this value is hardcoded. In a real world scenario we would dynamically assign the `isActive` boolean inside a `onClick` function.
