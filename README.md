@@ -2,9 +2,7 @@
 
 ## Demo
 
-For quick reference, the demo can be seen in the Heroku app:
-
-[Heroku app](https://movilr.herokuapp.com/)
+For quick reference, the demo can be seen in this [Heroku app](https://movilr.herokuapp.com/)
 
 ## Local Setup
 
@@ -26,7 +24,7 @@ The project is component-based.
 Inside it there is a `div` with id `#app`, which is the part of the DOM managed by Vue. <br/>
 Inside this `div` we inject the two main components: the `Menu` and the `Search` page.
 
-###### Menu component
+##### Menu component
 
 Menu is the left sidebar navigation. It's located at `src/components/Menu.vue` <br/>
 Each navigation's item it's represented by its own `MenuItem` child component, to whom are passed as props the title of the item, the svg icon path and a boolean telling Vue if the item is active.
@@ -36,7 +34,7 @@ Each navigation's item it's represented by its own `MenuItem` child component, t
 - In a real-world scenario, the various pages of the SPA would be managed by the `Vue-router`. In this case, since we have just one page, I simply inject the `Search` page component into the main app.
 
 
-###### Search component
+##### Search component
 
 The `Search` page is located at `src/pages/Search.vue` contain three child components: the `SearchInput`, the `Card` and the `Notification`.
 
@@ -48,7 +46,7 @@ The cards are displayed with a little animation that fade in the opacity of the 
 
 - A dynamic `Notification` error component is displayed in case no results are found or if there is an error with the API.
 
-###### Store
+##### Store
 
 The `store` (located at `src/store.js`) represent the application state. In this case it's very little. It just contain three state vars (the shows list and the notification data), one Action (asynchronous action to retrieve the shows list and commit the mutation with the data) and three Mutations to update the app's state.
 
